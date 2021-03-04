@@ -16,11 +16,13 @@ header{
 .menu_uniandes{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-basis: 60%;
 }
 .menu_uniandes .menu_uniandes--logo img{
     width: 60px;
+    margin-left: 100%;
 }
 .menu_uniandes--links{
     display: flex;
@@ -35,6 +37,16 @@ header nav .menu_busqueda_uniandes{
     flex-direction: row;
     align-items: center;
     float: right;
+    flex-basis: 35%;
+    justify-content: space-around   ;
+}
+header nav .menu_busqueda_uniandes input{
+    border: 1.5px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    padding: 0.2px 8px;
+    width: 250px;
 }
 header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links{
     display: flex;    
@@ -75,12 +87,18 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
 }
 .container .container--card h4 {
     font-weight: 600;
-    margin-top: 5px;
+    margin-top: 20px;
+    max-height: 60px;
+    min-height: 59px;
+    display: inline-block;
+    border-bottom: 3px solid yellow;
 }
 .container .container--card p {
     padding: 1px 1rem;
     margin-top: 5px;
     font-size: 16px;
+    min-height: 149px;
+    max-height: 150px;
 }
 .container .container--card button{
     border-radius: 8px;
