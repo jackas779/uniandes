@@ -29,6 +29,9 @@ header{
 }
 .menu_uniandes--links{
     display: flex;
+    flex-basis: 65%;
+    justify-content: space-around;
+    align-items: center;
 }
 header nav .menu_uniandes .menu_uniandes--links a{
     padding: 0 12px;
@@ -84,7 +87,7 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
 }
 .container .container--card{
     width: 330px;
-    height: 500px;
+    height: 520px;
     margin: 20px;
     text-align: center;
     background-color: white;
@@ -101,6 +104,7 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
     min-height: 59px;
     display: inline-block;
     border-bottom: 3px solid yellow;
+    width: 286px;
 }
 .container .container--card p {
     padding: 1px 1rem;
@@ -123,7 +127,7 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
     color: black;
 }
 .footer{
-    height: 60px;
+    height: 80px;
 }
 #botn-slider{
     background-color: transparent;
@@ -132,5 +136,9 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
     margin-bottom: 3.5%;
     margin-left: 75%;
     border: 2px solid yellow;
+    color: white;
+}
+#botn-slider:hover{
+    background-color: black;
     color: white;
 }
