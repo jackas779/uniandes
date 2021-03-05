@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(241, 237, 237);
+}
 header{
     background-color: black;
 }
@@ -21,11 +24,14 @@ header{
     flex-basis: 60%;
 }
 .menu_uniandes .menu_uniandes--logo img{
-    width: 60px;
+    width: 80px;
     margin-left: 100%;
 }
 .menu_uniandes--links{
     display: flex;
+    flex-basis: 65%;
+    justify-content: space-around;
+    align-items: center;
 }
 header nav .menu_uniandes .menu_uniandes--links a{
     padding: 0 12px;
@@ -64,6 +70,12 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
     text-align: center;
     margin-top: 10px;
 }
+.title_cards h1{
+    margin-top: 5%;
+}
+.title_cards h2{
+    margin-bottom: 3%;
+}
 .container{
     width: 100%;
     max-width: 1200px;
@@ -75,11 +87,11 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
 }
 .container .container--card{
     width: 330px;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgb(0, 0,0, 0.3);
+    height: 520px;
     margin: 20px;
     text-align: center;
+    background-color: white;
+    margin-bottom: 40px;
 }
 .container .container--card img {
     width: 330px;
@@ -92,6 +104,7 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
     min-height: 59px;
     display: inline-block;
     border-bottom: 3px solid yellow;
+    width: 286px;
 }
 .container .container--card p {
     padding: 1px 1rem;
@@ -99,6 +112,8 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
     font-size: 16px;
     min-height: 149px;
     max-height: 150px;
+    width: 264px;
+    margin-left: 33px;
 }
 .container .container--card button{
     border-radius: 8px;
@@ -106,4 +121,24 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
     width: 80%;
     border: 0;
     background-color: gray;
+}
+.container .container--card button:hover{
+    background-color: yellow;
+    color: black;
+}
+.footer{
+    height: 80px;
+}
+#botn-slider{
+    background-color: transparent;
+    position: absolute;
+    width: 12%;
+    margin-bottom: 3.5%;
+    margin-left: 75%;
+    border: 2px solid yellow;
+    color: white;
+}
+#botn-slider:hover{
+    background-color: black;
+    color: white;
 }
