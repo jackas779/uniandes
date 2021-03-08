@@ -142,3 +142,28 @@ header nav .menu_busqueda_uniandes .menu_busqueda_uniandes--links a{
     background-color: black;
     color: white;
 }
+@media screen and (min-width:360px ){
+   header{        
+       background-color: #FFD8BE;
+    }
+}
+@media screen and (min-width:600px){
+   .container .container--card button{
+       color: #81559B ;
+       background-color: #8C86AA ;
+   }        
+}
+@media screen and (min-width:600px ){
+   header{      
+        background-color: #FFEEDD;
+   }
+}
+@media screen and (min-width:992px ){
+   header{
+       background-color: #F8F7FF;
+   }
+}
+@media screen and (min-width:1200px ){
+   header{
+       background-color: #B8B8FF;    } 
+}  
