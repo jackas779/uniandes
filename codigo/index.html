@@ -11,27 +11,30 @@
     <!-- css  -->
     <link rel="stylesheet" href="../css/index.css">
 
-    <title>!Prueba¡</title>
+    <title>Educación Continua</title>
   </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg header_uniandes">
       <div class="menu_uniandes">
-        <div class="menu_uniandes--logo">
+        <div class="menu_uniandes__logo">
           <img src="../imagen/Logo-uniandes.png" alt="Logo Universidad de los andes">
         </div>
-        <div class="menu_uniandes--links">
-          <a href="#">Inicio</a>
-          <a href="#">Nuestros <br> Programas</a>
-          <a href="#">Programas para <br> Organizaciones</a>
-          <a href="#">Quiénes <br> Somos</a>
+        <div class="menu_uniandes__links">
+          <a href="#" class="menu_uniandes__links__a">Inicio </a>
+          <a href="#">Nuestros  Programas</a>
+          <a href="#">Programas para Organizaciones</a>
+          <a href="#">Quiénes Somos</a>
         </div>
+      </div>
+      <div class="menu_uniandes_burger">
+        <img src="../imagen/menu_burger.png" alt="Logo del menu desplegable">
       </div>
       <div class="menu_busqueda_uniandes">
         <div>
-          <input type="search" placeholder="¿Que quieres aprender?" >
+          <input type="search" placeholder="¿Que quieres aprender?" class="menu_busqueda_uniandes__search" >
         </div>      
-        <div class="menu_busqueda_uniandes--links">
+        <div class="menu_busqueda_uniandes__links">
           <a href="#">FAQ</a>
           <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             ESP
@@ -52,15 +55,15 @@
       <li data-target="#demo" data-slide-to="2"></li>
     </ul>
     <!-- lAS IMAGENES-->
-    <div class="carousel-inner" align="center" style="background-color:gray">
+    <div class="carousel-inner container_slider">
       <div class="carousel-item active" >
-        <img src="../imagen/admin.jpg" alt="gato1" width="32.7%" >
+        <img src="../imagen/admin.jpg" alt="gato1"  >
       </div>
       <div class="carousel-item">
-        <img src="../imagen/gatologin.jpeg" alt="gato2" width="27.6%">
+        <img src="../imagen/gatologin.jpeg" alt="gato2" >
       </div>
       <div class="carousel-item">
-        <img src="../imagen/gatoq.jpg" alt="gato3" width="27%">
+        <img src="../imagen/BannerDestacado_Extension-2021.jpg" alt="gato3">
       </div>
       <a class="btn display-visibility fixed-bottom" id="botn-slider" href="#">Conoce más</a> 
 
@@ -81,37 +84,67 @@
       <h2>¡Descubre lo que tenemos para ti!</h2>
     </div>
   <div class="container">
-    <div class="container--card">
-      <img src="../imagen/gato.jpg" alt="gato">
-      <h4>NUESTROS PROGRAMAS </h4>
-      <p>Dirigidos a la comunidad en
-        general y diseñados con el
-        objetivo de formar,capacitar
-        ,actualizar y brindar
-        conocimientos a los participantes
-        en diferentes disciplinas. </p>
-        <button>Conoce más</button>
+    <div class="container__card">
+      <div class="container__card__img">
+        <img src="../imagen/gato.jpg" alt="gato">
+      </div>
+      <div class="container__card__content">
+        <div>
+          <h4 class="container__card__content__title">NUESTROS PROGRAMAS </h4>
+        </div>
+        <div class="container__card__content__parra">
+          <p>Dirigidos a la comunidad en
+            general y diseñados con el
+            objetivo de formar,capacitar
+            ,actualizar y brindar
+            conocimientos a los participantes
+            en diferentes disciplinas. </p>
+        </div>  
+        <div class="container__card__content__button">
+          <button>Conoce más</button>
+        </div>
+      </div>
     </div>
-    <div class="container--card">
-      <img src="../imagen/gatoq.jpg" alt="gato">
-      <h4>PROGRAMAS PARA NIÑOS Y JÓVENES </h4>
-      <p>Posibilitan una formación
-        complementaría a la educación
-        escolar, fomentando el desarrollo
-        integral de los participantes a
-        través de la exploración de sus
-        intereses y habilidades.  </p>
-        <button>Conoce más</button>
+    <div class="container__card">
+      <div class="container__card__img">
+        <img src="../imagen/gatoq.jpg" alt="gato">
+      </div>
+      <div class="container__card__content">
+        <div>
+          <h4 class="container__card__content__title">PROGRAMAS PARA NIÑOS Y JÓVENES  </h4>
+        </div>
+        <div class="container__card__content__parra">
+          <p>Posibilitan una formación
+            complementaría a la educación
+            escolar, fomentando el desarrollo
+            integral de los participantes a
+            través de la exploración de sus
+            intereses y habilidades. </p>
+        </div>  
+        <div class="container__card__content__button">
+          <button>Conoce más</button>
+        </div>
+      </div>
     </div>
-    <div class="container--card">
-      <img src="../imagen/gatologin.jpeg" alt="gato">
-      <h4>PROGRAMAS PARA ORGANIZACIONES</h4>
-      <p>Responden a las necesidades de
-        capacitación,actualización y
-        desarrollo de las organizaciones
-        para sus colaborades y socios
-        estrategicos.</p>
-        <button>Conoce más</button>
+    <div class="container__card">
+      <div class="container__card__img">
+        <img src="../imagen/gatologin.jpeg" alt="gato">
+      </div>
+      <div class="container__card__content">
+        <div>
+          <h4 class="container__card__content__title">PROGRAMAS PARA ORGANIZACIONES</h4>
+        </div>
+        <div class="container__card__content__parra">
+          <p>Responden a las necesidades de
+            capacitación,actualización y
+            desarrollo de las organizaciones
+            para sus colaborades y socios
+            estrategicos.</p>
+        </div>  
+        <div class="container__card__content__button">
+          <button>Conoce más</button>
+        </div>
+      </div>        
     </div>
   </div>
   <div class="footer">
