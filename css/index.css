@@ -50,7 +50,7 @@ header nav .menu_busqueda_uniandes{
     align-items: center;
     float: right;
     flex-basis: 35%;
-    justify-content: space-around   ;
+    justify-content: space-around;
 }
 header nav .menu_busqueda_uniandes .menu_busqueda_uniandes__search{
     border: 1.5px solid white;
