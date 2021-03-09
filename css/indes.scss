@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$color-celular:#8C86AA;
+$color-tablet:#FFD8BE;
+
 *{
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -239,7 +242,7 @@ header{
 }
 @media screen and (min-width: 480px) and (max-width: 767px){
     body{
-        background-color: #FFD8BE;
+        background-color: $color-tablet;
     }
     .menu_uniandes__links{
         display: none;
@@ -266,7 +269,7 @@ header{
 }
 @media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape){
     body{
-        background-color: #8C86AA;
+        background-color: $color-celular;
     }
     .container .container__card button{
         background-color: #81559B;
