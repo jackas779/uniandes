@@ -26,6 +26,33 @@
         text-align: center;
         background-color: white;
         margin-bottom: 40px;
+        
+        &:nth-child(1) .container__card__content__button{
+
+
+            button{
+                @include buttonHover(rgb(245, 11, 11),rgb(17, 17, 19));
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+        }
+
+        &:nth-child(2) .container__card__content__button{
+
+
+            button{
+                @include buttonHover(rgb(228, 176, 176),rgb(17, 17, 19));
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+        }
+
+        &:nth-child(3) .container__card__content__button{
+
+
+            button{
+                @include buttonHover(rgb(56, 211, 63),rgb(17, 17, 19));
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+        }
 
         img{
             width: 100%;
@@ -67,7 +94,8 @@
 
         .container__card__content__button{
 
-            .btnn{
+
+            button{
                 border-radius: 8px;
                 padding: 4px 1rem;
                 width: 100%;
@@ -77,23 +105,6 @@
                 font-size: 18px;
                 min-height: 44px;
                 max-height: 45px;
-
-
-                &--1{
-                    @include buttonHover(1,rgb(17, 17, 19));
-                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                }
-
-                &--2{
-                    @include buttonHover(2,rgb(17, 17, 19));
-                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                }
-
-
-                &--3{
-                    @include buttonHover(3,rgb(17, 17, 19));
-                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                }
             }
         }
     }
