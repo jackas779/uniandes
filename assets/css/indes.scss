@@ -1,0 +1,76 @@
+@media screen and (min-width: 1200px) { 
+    body{
+        background-color: #B8B8FF;
+    }
+}
+@media screen and (min-width: 960px) and (max-width: 1199px) { 
+    body{
+        background-color: #F8F7FF;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    body{
+        background-color: #FFEEDD;
+    }
+    .menu_uniandes__links{
+        display: none;
+    }
+    .menu_busqueda_uniandes{
+        visibility: hidden;
+        display: none;
+    }
+    .menu_uniandes_burger{
+        display: block;
+    }
+    .menu_uniandes_burger img{
+        width: 60px;
+    }
+    .container_slider img{
+        width: 100%;
+    }
+    #botn-slider{
+        margin-bottom: 3.5%;
+        margin-left: 60%;
+        width: 25%;
+
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+    body{
+        background-color: $color-tablet;
+    }
+    .menu_uniandes__links{
+        display: none;
+    }
+    .menu_busqueda_uniandes{
+        visibility: hidden;
+        display: none;
+    }
+    .menu_uniandes_burger{
+        display: block;
+    }
+    .menu_uniandes_burger img{
+        width: 60px;
+    }
+    .container_slider img{
+        width: 100%;
+    }
+    #botn-slider{
+        margin-bottom: 3.5%;
+        margin-left: 60%;
+        width: 25%;
+
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape){
+    body{
+        background-color: $color-celular;
+    }
+    .container .container__card button{
+        background-color: #81559B;
+    }
+    .container_slider img{
+        width: 100%;
+    }
+}

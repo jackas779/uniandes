@@ -1,0 +1,20 @@
+{
+  "name": "uniandes_biblioteca",
+  "version": "1.0.0",
+  "description": "Compilar estilos desde uniandes_biblioteca",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Uniandes",
+  "license": "ISC"
+}

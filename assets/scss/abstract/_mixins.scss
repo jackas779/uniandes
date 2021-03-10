@@ -1,0 +1,6 @@
+@mixin buttonHover($color-fondo,$color-texto) {
+        &:hover {
+        background-color:$color-fondo;
+        color: $color-texto;
+        }
+}
