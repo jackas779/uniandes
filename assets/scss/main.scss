@@ -1,0 +1,14 @@
+// VARIABLES
+@import "abstract/variables";
+
+// MIXIX
+@import "abstract/mixins";
+
+// COMPONENTS
+@import "components/header";
+@import "components/slider";
+@import "components/cards";
+@import "components/footer";
+
+// VIEWS
+@import "views/home";

@@ -1,0 +1,72 @@
+header{
+    background-color: black;
+
+    .header_uniandes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu_uniandes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-basis: 60%;
+
+            .menu_uniandes__logo img{
+                width: 80px;
+                margin-left: 100%;
+            }
+
+            .menu_uniandes__links{
+                display: flex;
+                flex-basis: 65%;
+                justify-content: space-around;
+                align-items: center;
+
+                .menu_uniandes__links__a{
+                    margin-right: 15px;
+                }
+
+                .menu_uniandes__links a{
+                    padding: 0 12px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            .menu_uniandes_burger{
+                display: none;
+            }
+
+            .menu_busqueda_uniandes{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                float: right;
+                flex-basis: 35%;
+                justify-content: space-around;
+
+                .menu_busqueda_uniandes__search{
+                    border: 1.5px solid white;
+                    border-radius: 10px;
+                    color: white;
+                    background-color: transparent;
+                    padding: 0.2px 8px;
+                    width: 250px;
+                }
+
+                .menu_busqueda_uniandes__links{
+                    display: flex; 
+                    
+                    a{
+                        padding: 0 12px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

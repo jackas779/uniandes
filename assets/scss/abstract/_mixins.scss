@@ -1,0 +1,20 @@
+@mixin buttonHover($number,$color-texto) {
+    @if($number==1){
+        &:hover {
+        background-color:blueviolet;
+        color: $color-texto;
+        }
+    }
+    @if($number==2){
+        &:hover {
+        background-color:rgb(4, 134, 0);
+        color: $color-texto;
+        }
+    }
+    @if($number==3){
+        &:hover {
+        background-color:rgb(226, 86, 43);
+        color: $color-texto;
+        }
+    }
+}
