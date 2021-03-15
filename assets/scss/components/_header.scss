@@ -6,6 +6,7 @@ header{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        
 
         .menu_uniandes{
             display: flex;
@@ -25,22 +26,23 @@ header{
                 justify-content: space-around;
                 align-items: center;
 
+
                 .menu_uniandes__links__a{
                     margin-right: 15px;
                 }
 
-                .menu_uniandes__links a{
+                a{
                     padding: 0 12px;
                     color: white;
                     text-decoration: none;
                 }
             }
 
-            .menu_uniandes_burger{
+            .menu_uniandes__burger{
                 display: none;
             }
 
-            .menu_busqueda_uniandes{
+            .menu_busqueda__uniandes{
                 display:flex;
                 flex-direction: row;
                 align-items: center;

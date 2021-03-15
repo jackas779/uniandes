@@ -4,3 +4,82 @@
         color: $color-texto;
         }
 }
+@mixin responsive ($pantalla) {
+        @if $pantalla==desktop-xl{
+                @media screen and (min-width: 1200px){
+                        @content;
+                }
+        }
+        @else if $pantalla==desktop{
+                @media screen and (min-width: 960px) and (max-width: 1199px) { 
+                        @content;
+                        
+                    }
+            }
+            @else if $pantalla==tablet{
+               
+                @media screen and (min-width: 768px) and (max-width: 959px) {
+                        @content;
+                        .menu_uniandes__links{
+                            display: none;
+                            }
+                        .menu_busqueda_uniandes{
+                        visibility: hidden;
+                        display: none;
+                        }
+                        .menu_uniandes_burger{
+                        display: block;
+                        }
+                        .menu_uniandes_burger img{
+                        width: 60px;
+                        }
+                        .container_slider img{
+                        width: 100%;
+                        }
+                        #botn-slider{
+                        margin-bottom: 3.5%;
+                        margin-left: 60%;
+                        width: 25%;
+                
+                        }
+                }
+            }
+            @else if $pantalla==phone{
+                @media screen and (min-width: 480px) and (max-width: 767px){
+                        @content;
+                        .menu_uniandes__links{
+                            display: none;
+                        }
+                        .menu_busqueda_uniandes{
+                            visibility: hidden;
+                            display: none;
+                        }
+                        .menu_uniandes_burger{
+                            display: block;
+                        }
+                        .menu_uniandes_burger img{
+                            width: 60px;
+                        }
+                        .container_slider img{
+                            width: 100%;
+                        }
+                        #botn-slider{
+                            margin-bottom: 3.5%;
+                            margin-left: 60%;
+                            width: 25%;
+                    
+                        }
+                    }
+            }
+            @else if $pantalla==phone-h{
+                @media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape){
+                        @content;
+                        .container .container__card button{
+                            background-color: $boton-celular-h;
+                        }
+                        .container_slider img{
+                            width: 100%;
+                        }
+                    }
+            }
+}

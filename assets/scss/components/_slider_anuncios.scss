@@ -1,0 +1,81 @@
+.title_slider_anuncios{
+    text-align: center;
+
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        color: rgb(37, 37, 54);
+    }
+
+}
+
+.container_slider_anuncios{
+    margin: auto;
+    width: 900px;
+    padding: 30px;
+    display: flex;
+    position: relative;
+
+    .container_slider_anuncios__content{
+        display: flex;
+        position: relative;
+        width: 900px;
+        height: 300px;
+        justify-content: center;
+
+        .container_items{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            input[type="radio"]{
+                display: none;
+            }
+            .container_items__img{
+                height: 200px;
+                opacity: 0;
+
+                img{
+                    width: 50%;
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    height: inherit;
+                }
+            }
+            .container_items__content{
+                opacity: 0;                
+                p{
+                    width: 50%;
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    padding: 15px;
+                    display: inline-block;
+                    border-top: 2px solid rgb(0, 0, 255);
+                }
+            }
+
+            input[type="radio"]:checked ~ .container_items__img{
+                opacity: 1;
+            }
+            input[type="radio"]:checked ~ .container_items__content{
+                opacity: 1;
+            }
+
+            input[type="radio"] + label{
+                margin: 8px;
+                display: block;
+                background-color: rgb(128, 128, 128);
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+            }
+            input[type="radio"]:checked + label{
+                background-color: rgb(59, 58, 58);
+            }
+
+        }
+        
+    }
+}

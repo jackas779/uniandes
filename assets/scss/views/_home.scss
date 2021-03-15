@@ -1,3 +1,18 @@
 body{
     background-color: rgb(241, 237, 237);
+        @include responsive (desktop-xl) {
+            background-color: $fondo-desktop-xl;
+        } 
+        @include responsive (desktop) {
+            background-color: $fondo-desktop;
+        }  
+        @include responsive (tablet) {
+            background-color: $color-tablet;
+        }  
+        @include responsive (phone) {
+            background-color: $color-celular;
+        }       
+        @include responsive (phone-h) {
+            background-color: $boton-celular-h;
+        }  
 }
