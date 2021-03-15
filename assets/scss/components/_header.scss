@@ -36,21 +36,44 @@ header{
                     color: white;
                     text-decoration: none;
                 }
+
+                @include responsive(tablet){
+                    display: none;
+                }
+                @include responsive(phone){
+                    display: none;
+                }
             }
+        }    
 
-            .menu_uniandes__burger{
-                display: none;
+        .menu_uniandes__burger{
+            display: none;
+            @include responsive(tablet){
+                display: block;
+                img{
+                    width: 60px;
+
+                }
             }
+            @include responsive(phone){
+                display: block;
+                img{
+                    width: 60px;
 
-            .menu_busqueda__uniandes{
-                display:flex;
-                flex-direction: row;
-                align-items: center;
-                float: right;
-                flex-basis: 35%;
-                justify-content: space-around;
+                }
+            }
+        }
 
-                .menu_busqueda_uniandes__search{
+        .menu_busqueda__uniandes{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            float: right;
+            flex-basis: 35%;
+            justify-content: space-around;
+
+            .menu_busqueda__uniandes__search{
+                input[type="search"]{
                     border: 1.5px solid white;
                     border-radius: 10px;
                     color: white;
@@ -58,16 +81,21 @@ header{
                     padding: 0.2px 8px;
                     width: 250px;
                 }
+            }
 
-                .menu_busqueda_uniandes__links{
-                    display: flex; 
-                    
-                    a{
-                        padding: 0 12px;
-                        color: white;
-                        text-decoration: none;
-                    }
+            .menu_busqueda__uniandes__links{
+                display: flex;
+                a{
+                    padding: 0 12px;
+                    color: white;
+                    text-decoration: none;
                 }
+            }
+            @include responsive(tablet){
+                display: none;
+            }
+            @include responsive(phone){
+                display: none;
             }
         }
     }

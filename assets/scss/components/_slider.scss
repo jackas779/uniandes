@@ -23,5 +23,16 @@
             background-color: black;
             color: white;
         }
+
+        @include responsive(tablet){
+            margin-bottom: 3.5%;
+            margin-left: 60%;
+            width: 25%;
+        }
+        @include responsive(phone){
+            margin-bottom: 3.5%;
+            margin-left: 60%;
+            width: 25%;
+        }
     }
 }
