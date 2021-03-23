@@ -32,6 +32,11 @@
         .container_items{
             display: flex;
             align-items: flex-end;
+
+            @include responsive(desktop-xl){
+                justify-content: space-between;
+            }
+
             @include responsive(desktop){
                 justify-content: space-between;
             }
@@ -43,6 +48,16 @@
                 display: none;
             }
             .container_items__img{
+
+                @include responsive(desktop-xl){
+                    height: 200px;
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    top:0;
+                    width: 50%;
+                }
+
                 @include responsive(desktop){
                     height: 200px;
                     opacity: 0;
@@ -68,6 +83,16 @@
                 }
             }
             .container_items__content{
+
+                @include responsive(desktop-xl){
+                    opacity: 0;
+                    position: absolute;    
+                    right: 0;
+                    top: 5%;            
+                    width: 50%;
+                    height: 95%;
+                }
+
                 @include responsive(desktop){
                     opacity: 0;
                     position: absolute;    
@@ -93,6 +118,12 @@
                     margin: 0 10px;
                     padding: 4% 20px;
 
+                    @include responsive(desktop-xl){
+                        border-top: 3.5px solid blue;
+                        display: inline-block;
+                        width: 90%;
+                    }
+
                     @include responsive(desktop){
                         border-top: 3.5px solid blue;
                         display: inline-block;
@@ -109,6 +140,11 @@
                     color: white;
                     background-color: transparent;
                     float: right;
+
+                    @include responsive(desktop-xl){
+                        margin-right: 10%;
+                    }
+
                     @include responsive(desktop){
                         margin-right: 10%;
                     }
