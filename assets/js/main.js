@@ -15,28 +15,19 @@ function finput(){
   inpout.setAttribute("placeholder",a)
   inpout.removeEventListener('click',finput)
 }
-const container_card= document.querySelector('#container_cards')
-
-let cats = document.querySelector('.container__card__img').childNodes[1]
-let cat = document.querySelector('.container__card__content__parra').childNodes[1]
-let cat_1 = cats
-console.log(cat);
-const card = document.createElement('div')
-card.className= "container__card"
-
-const con_img = document.createElement('div')
-//con_img.textContent = "este es un div dentro de un div"
-con_img.className= "container__card__img"
-con_img.appendChild(cat_1)
 
 
-const text_card = document.createElement('div')
-text_card.textContent= "este div es el div del mcontenido"
-text_card.className= "container__card__content__parra"
-text_card.appendChild(cat)
+let container_1 =document.querySelector('#conta_1')
+let container_2 =document.querySelector('#conta_2')
+let container_3 =document.querySelector('#conta_3')
 
+container_1.addEventListener('click',invisible_card(3))
+//container_1.removeEventListener('mouseout',invisble_card())
 
+function invisible_card(bar){
 
-card.appendChild(con_img)
-card.appendChild(text_card)
-container_card.appendChild(card)
+  const container_card= document.querySelector('#container_cards')
+  let conta_1= document.querySelector('#conta_1')
+  let coco = conta_1.cloneNode(true)
+  container_card.appendChild(coco)
+}
