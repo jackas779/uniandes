@@ -12,8 +12,7 @@ let inpout = document.querySelector('.menu_busqueda__uniandes__search').childNod
 inpout.addEventListener('click',finput)
 function finput(){
   let a = prompt("cambia el contenido")
-  inpout.setAttribute("placeholder",a)
-  inpout.removeEventListener('click',finput)
+  console.log(a);
 }
 
 const container_card= document.querySelector('#container_cards')
