@@ -16,18 +16,37 @@ function finput(){
   inpout.removeEventListener('click',finput)
 }
 
-
+const container_card= document.querySelector('#container_cards')
 let container_1 =document.querySelector('#conta_1')
 let container_2 =document.querySelector('#conta_2')
 let container_3 =document.querySelector('#conta_3')
 
-container_1.addEventListener('click',invisible_card(3))
-//container_1.removeEventListener('mouseout',invisble_card())
+container_1.addEventListener('mouseenter',card_1)
+container_1.addEventListener('mouseleave',invisible_card)
+container_2.addEventListener('mouseenter',card_2)
+container_2.addEventListener('mouseleave',invisible_card)
+container_3.addEventListener('mouseenter',card_3)
+container_3.addEventListener('mouseleave',invisible_card)
 
-function invisible_card(bar){
-
-  const container_card= document.querySelector('#container_cards')
+function card_1(){
   let conta_1= document.querySelector('#conta_1')
   let coco = conta_1.cloneNode(true)
+  coco.setAttribute("id","conta_4")
   container_card.appendChild(coco)
+}
+function card_2(){
+  let conta_1= document.querySelector('#conta_2')
+  let coco = conta_1.cloneNode(true)
+  coco.setAttribute("id","conta_4")
+  container_card.appendChild(coco)
+}
+function card_3(){
+  let conta_1= document.querySelector('#conta_3')
+  let coco = conta_1.cloneNode(true)
+  coco.setAttribute("id","conta_4")
+  container_card.appendChild(coco)
+}
+function invisible_card() {
+  let remove = document.querySelector('#conta_4')
+  let el= container_card.removeChild(remove)
 }
