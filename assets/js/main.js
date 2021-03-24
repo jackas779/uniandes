@@ -50,3 +50,12 @@ function invisible_card() {
   let remove = document.querySelector('#conta_4')
   let el= container_card.removeChild(remove)
 }
+ 
+
+if (screen.width <= 780){
+  alert("La resolución de tu pantalla es de un mobil " )
+}
+else{
+  console.log("es mas grande ")
+} 
+ 
