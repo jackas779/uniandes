@@ -6,35 +6,52 @@ header{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding: 0;
         
 
         .menu_uniandes{
             display: flex;
-            flex-direction: row;
+            //flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            flex-basis: 60%;
+            flex-basis: 96%;
 
             .menu_uniandes__logo img{
-                width: 80px;
+                width: 90px;
                 margin-left: 100%;
             }
 
             .menu_uniandes__links{
                 display: flex;
-                flex-basis: 65%;
+                flex-basis: 75%;
                 justify-content: space-around;
                 align-items: center;
 
-
                 .menu_uniandes__links__a{
-                    margin-right: 15px;
+                    padding: 20px 0;
                 }
 
                 a{
-                    padding: 0 12px;
-                    color: white;
+                    color: rgb(255, 255, 255);
                     text-decoration: none;
+                    min-width: 135px;
+                    min-height: 68px;
+                    text-align: center;
+                    padding: 10px 0;
+
+                    img{
+                        width: 30px;
+                        color: rgb(255, 255, 255);
+                    }
+
+                    &:hover{
+                        background-color: rgb(255, 255, 255);
+                        color: rgb(0, 0, 0);
+                        transition: 0.6s;
+                    }
+                    &:last-child{
+                        background-color: rgb(0, 0, 0);
+                    }
                 }
 
                 @include responsive(tablet){
@@ -65,7 +82,7 @@ header{
         }
 
         .menu_busqueda__uniandes{
-            display:flex;
+            display:none;
             flex-direction: row;
             align-items: center;
             float: right;

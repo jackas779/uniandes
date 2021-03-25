@@ -8,12 +8,12 @@ for(let i=0;i < 3;i++ ){
   imagenen[i].appendChild(imgg)
 }
 
-let inpout = document.querySelector('.menu_busqueda__uniandes__search').childNodes[1]
-inpout.addEventListener('click',finput)
-function finput(){
-  let a = prompt("cambia el contenido")
-  console.log(a);
-}
+// let inpout = document.querySelector('.menu_busqueda__uniandes__search').childNodes[1]
+// inpout.addEventListener('click',finput)
+// function finput(){
+//   let a = prompt("cambia el contenido")
+//   console.log(a);
+// }
 
 const container_card= document.querySelector('#container_cards')
 let container_1 =document.querySelector('#conta_1')
@@ -57,4 +57,38 @@ if (screen.width <= 780){
 else{
   console.log("es mas grande ")
 } 
- 
+
+
+let menu_1 = document.querySelector('.menu_uniandes__links').childNodes[5]
+let menu_2 = document.querySelector('.menu_uniandes__links').childNodes[9]
+let menu_3 = document.querySelector('.menu_uniandes__links').childNodes[11]
+menu_1.addEventListener('mouseenter',()=>{
+  let container__1 = document.querySelector('.items_container_1')
+  container__1.classList.add("pos")
+  container__1.style.opacity = '1'
+})
+menu_1.addEventListener('mouseout',()=>{
+  let container__1 = document.querySelector('.items_container_1')
+  container__1.classList.remove("pos")
+  container__1.style.opacity = '0'
+})
+menu_2.addEventListener('mouseenter',()=>{
+  let container__2 = document.querySelector('.items_container_2')
+  container__2.classList.add("pos")
+  container__2.style.opacity = '1'
+})
+menu_2.addEventListener('mouseout',()=>{
+  let container__2 = document.querySelector('.items_container_2')
+  container__2.classList.remove("pos")
+  container__2.style.opacity = '0'
+})
+menu_3.addEventListener('mouseenter',()=>{
+  let container__3 = document.querySelector('.items_container_3')
+  container__3.classList.add("pos")
+  container__3.style.opacity = '1'
+})
+menu_3.addEventListener('mouseout',()=>{
+  let container__3 = document.querySelector('.items_container_3')
+  container__3.classList.remove("pos")
+  container__3.style.opacity = '0'
+})
