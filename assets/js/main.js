@@ -92,3 +92,9 @@ menu_3.addEventListener('mouseout',()=>{
   container__3.classList.remove("pos")
   container__3.style.opacity = '0'
 })
+$(document).ready(function() {
+  var mobyMenu = new Moby({
+    menu       : $('#main-nav'), // The menu that will be cloned
+    mobyTrigger: $('#moby-button'), // Button that will trigger the Moby menu to open
+  });
+})
