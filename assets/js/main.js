@@ -96,5 +96,16 @@ $(document).ready(function() {
   var mobyMenu = new Moby({
     menu       : $('#main-nav'), // The menu that will be cloned
     mobyTrigger: $('#moby-button'), // Button that will trigger the Moby menu to open
+    menuClass    :  'left-side' ,// This is the class that is added to Moby (Mobile menu)
+    breakpoint		 : 1024,
+    enableEscape	 : true,
+    onClose          : false,
+    onOpen           : false,
+    overlay			 : true,
+    overlayClass 	 : 'dark',
+    subMenuOpenIcon  : '<span id="boton_despliegue">abrir</span>',
+    subMenuCloseIcon : '<span id="boton_ocultar">cerrar</span>',
+    template         : '<div class="moby-wrap"><div class="moby-close"><span class="moby-close-icon"></span> Close Menu</div><div class="moby-menu"></div></div>'
   });
+ 
 })
