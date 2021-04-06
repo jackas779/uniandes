@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
      <!-- css de moby  -->
-      <link rel="stylesheet" href="assets/bower_components/moby.js/dist/moby.min.css">
+      <link rel="stylesheet" href="assets/css/moby.min.css">
 
     <title>Educación Continua</title>
   </head>
@@ -286,26 +286,32 @@
       
     </div>
   </div>  
-
-  <nav id="main-nav">
-    <ul>
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><a href="#">Link 4</a></li>
-    <ul>
-  </nav>
+  <div class="moby-wrap menu_mobile">
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#">Link 1</a>
+        <ul class="sub_menu_1">
+          <li>opcion one</li>
+          <li>opción two</li>
+        </ul>
+        </li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      <ul>
+    </nav>
+  </div>
   
   <!-- Do NOT use an anchor tag for the mobile menu button -->
-  <a href="#"><span id="moby-button">
+  <span id="moby-button">
     <i class="material-icons">menu</i>
-  </span></a>
+  </span>
 
   <div class="footer"></div>
 
       <!--Java script de moby-->
-      <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="assets/bower_components/moby.js/dist/moby.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/moby.js"></script>
 
       <!--Java script de la pagina-->
       <script src="assets/js/main.js"></script>
