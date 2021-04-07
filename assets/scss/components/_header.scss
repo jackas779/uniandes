@@ -54,6 +54,10 @@ header{
             margin: 0;
             overflow: scroll;
 
+            .activo{
+                transition: 2s;
+            }
+
 
             .menu_uniandes__links{
                 flex-direction: column;
