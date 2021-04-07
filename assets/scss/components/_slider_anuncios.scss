@@ -203,7 +203,8 @@
                 width: 10px;
                 height: 10px;
                 border-radius: 100%;
-                z-index: 50;
+                z-index: 15;
+                position: relative;
             }
             input[type="radio"]:checked + label{
                 background-color: rgb(128, 126, 226);

@@ -11,6 +11,7 @@ body{
         }  
         @include responsive (phone) {
             background-color: $color-celular;
+            padding-top: 50px;
         }       
         @include responsive (phone-h) {
             background-color: $boton-celular-h;

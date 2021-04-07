@@ -57,8 +57,7 @@ if (screen.width <= 780){
 else{
   console.log("es mas grande ")
 } 
-
-
+if (screen.width >= 970){
 let menu_1 = document.querySelector('.menu_uniandes__links').childNodes[5]
 let menu_2 = document.querySelector('.menu_uniandes__links').childNodes[9]
 let menu_3 = document.querySelector('.menu_uniandes__links').childNodes[11]
@@ -92,20 +91,21 @@ menu_3.addEventListener('mouseout',()=>{
   container__3.classList.remove("pos")
   container__3.style.opacity = '0'
 })
-$(document).ready(function() {
-  var mobyMenu = new Moby({
-    menu       : $('#main-nav'), // The menu that will be cloned
-    mobyTrigger: $('#moby-button'), // Button that will trigger the Moby menu to open
-    menuClass    :  'left-side' ,// This is the class that is added to Moby (Mobile menu)
-    breakpoint		 : 1024,
-    enableEscape	 : true,
-    onClose          : false,
-    onOpen           : false,
-    overlay			 : true,
-    overlayClass 	 : 'dark',
-    subMenuOpenIcon  : '<span id="boton_despliegue">abrir</span>',
-    subMenuCloseIcon : '<span id="boton_ocultar">cerrar</span>',
-    template         : '<div class="moby-wrap"><div class="moby-close"><span class="moby-close-icon"></span> Close Menu</div><div class="moby-menu"></div></div>'
-  });
- 
-})
+}
+
+
+let burger = document.querySelector('.menu_uniandes_burger__img__2')
+burger.addEventListener('click',left)
+var contad= 0
+
+function left(){
+  if(contad==0){
+  let menu = document.querySelector('.header_uniandes')
+  menu.style.left='0'
+  contad=1
+  }else{
+    let menu = document.querySelector('.header_uniandes')
+    menu.style.removeProperty("left");
+    contad=0
+  }
+}    
