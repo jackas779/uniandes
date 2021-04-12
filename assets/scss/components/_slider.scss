@@ -1,0 +1,39 @@
+.container_slider{
+    text-align: center;
+    background-color: gray;
+    
+    img{
+        width: 100%;
+    }
+
+    button{
+        float: right;
+    }
+    
+    #botn-slider{
+        background-color: transparent;
+        position: absolute;
+        z-index: 5;
+        width: 12%;
+        margin-bottom: 3.5%;
+        margin-left: 75%;
+        border: 2px solid yellow;
+        color: white;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+
+        @include responsive(tablet){
+            margin-bottom: 3.5%;
+            margin-left: 60%;
+            width: 25%;
+        }
+        @include responsive(phone){
+            margin-bottom: 3.5%;
+            margin-left: 60%;
+            width: 25%;
+        }
+    }
+}

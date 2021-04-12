@@ -1,0 +1,34 @@
+@mixin buttonHover($color-fondo,$color-texto) {
+        &:hover {
+        background-color:$color-fondo;
+        color: $color-texto;
+        }
+}
+@mixin responsive ($pantalla) {
+        @if $pantalla==desktop-xl{
+                @media screen and (min-width: 1200px){
+                        @content;
+                }
+        }
+        @else if $pantalla==desktop{
+                @media screen and (min-width: 960px) and (max-width: 1199px) { 
+                        @content;                     
+                    }
+            }
+            @else if $pantalla==tablet{
+               
+                @media screen and (min-width: 768px) and (max-width: 959px) {
+                        @content;
+                }
+            }
+            @else if $pantalla==phone{
+                @media screen and (min-width: 480px) and (max-width: 767px){
+                        @content;
+                    }
+            }
+            @else if $pantalla==phone-h{
+                @media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape){
+                        @content;
+                    }
+            }
+}
